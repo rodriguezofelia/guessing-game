@@ -1,21 +1,11 @@
 """A number-guessing game."""
 import random
-# greet player
-# get player name
-# choose random number between 1 and 100
-# repeat forever:
-#     get guess
-#     if guess is incorrect:
-#         give hint
-#         increase number of guesses
-#     else:
-#         congratulate player
+
 def guessing_game():
 
-    name = input("What is your name? >")
-    print(f"Welcome {name}")
+    name = input("What is your name? > ").title()
+    print(f"Welcome {name}!")
     random_num = random.randint(0,100)
-    print(random_num)
     count = 1
 
     while True:
